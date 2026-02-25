@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratos Escolher</title>
+</head>
+<body>
+    <h1>Escolha de Pratos entre: </h1>
+    <p>Pizza, Hamburguer, Sushi, Salada</p>
+
+    <button onclick="escolherPrato()">escolher</button>
+
+    
+    <script>
+        function escolherPrato(){
+
+            let escolha= prompt("Escolha um Prato entre Pizza/ Hamburguer/ Sushi/salada");
+
+            switch(escolha){
+            case "pizza":
+                document.write("vou pedir uma pizza");
+                break;
+            case "hamburguer":
+                document.write("vou pedir um hamburguer");
+                break;
+            case "sushi":
+                document.write("vou pedir um sushi");
+                break;
+            case "salada":
+                document.write("salada");
+                break;
+            default:
+                document.write("Opção Inválida");
+            }
+        }
+
+        
+
+
+
+    </script>
+</body>
+</html>
